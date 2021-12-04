@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wróżby Noworoczne 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="style.css">
+  <script src='main.js'></script>
+</head>
+
+<body background= "https://d-art.ppstatic.pl/kadry/k/r/1/ba/92/5a48b67a940dd_o_large.jpg">
+  <div class='all'>
+    <header>
+      <h1>NOWOROCZNA WRÓŻBA 2022</h1>
+    </header>
+    <div id="Content">
+        <div id="LeftColumn">
+            <h2>Powiedz mi kim jesteś, a powiem Ci co Cię czeka:</h2>
+            <p>Płeć:  <select id="plec">
+              <option value=""></option>
+              <option value="kobieta">kobieta</option>
+              <option value="mężczyzna">mężczyzna</option>
+            </select></p>
+            <p>Znak zodiaku:  <select id="zodiak">
+              <option value=""></option>
+              <option value="lew">lew</option>
+              <option value="baran">baran</option>
+            </select>
+            </p>
+            <p>Wiek: <input type="date" id="wiek" name="wiek" min="1900-01-01" max="2022-12-30"> </p>
+            <p>Stan cywilny: <select id="stan">
+              <option value=""></option>
+              <option value="wolny">wolna/wolny</option>
+              <option value="zajęty">mężatka/żonaty</option>
+              <option value="związek">w nieformalnym związku</option>
+            </select></p>
+            <p>Status zawodowy: <select id="status">
+              <option value=""></option>
+              <option value="studiuję">studiuję</option>
+              <option value="pracuję">pracuję</option>
+              <option value="szukam pracy">szukam pracy</option>
+            </select>
+            </p>
+            <p><input type="submit" value="Opracuj wróżbę" onclick="wrozba()"></p>
+        </div>
+        <div id="RightColumn">
+            <p> Twoja wróżba:</p>
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class="exClear"></div>
+        </div>
+         <div id="Footer">
+        <p> Szczęśliwego Nowego Roku !!!</p>
+         </div>
+    </div>
+  </div>
+</body>
+</html>
