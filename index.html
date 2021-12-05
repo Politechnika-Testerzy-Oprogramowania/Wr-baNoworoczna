@@ -9,9 +9,10 @@
 
   <link rel="stylesheet" href="style.css">
   <script src='main.js'></script>
+  <body background= "https://d-art.ppstatic.pl/kadry/k/r/1/ba/92/5a48b67a940dd_o_large.jpg">
 </head>
 
-<body background= "https://d-art.ppstatic.pl/kadry/k/r/1/ba/92/5a48b67a940dd_o_large.jpg">
+<body>
   <div class='all'>
     <header>
       <h1>NOWOROCZNA WRÓŻBA 2022</h1>
@@ -22,7 +23,7 @@
             <p>Płeć:  <select id="plec">
               <option value=""></option>
               <option value="kobieta">kobieta</option>
-              <option value="mężczyzna">mężczyzna</option>
+              <option value="mezczyzna">mężczyzna</option>
             </select></p>
             <p>Znak zodiaku:  <select id="zodiak">
               <option value=""></option>
@@ -34,21 +35,21 @@
             <p>Stan cywilny: <select id="stan">
               <option value=""></option>
               <option value="wolny">wolna/wolny</option>
-              <option value="zajęty">mężatka/żonaty</option>
-              <option value="związek">w nieformalnym związku</option>
+              <option value="zajety">mężatka/żonaty</option>
+              <option value="zwiazek">w nieformalnym związku</option>
             </select></p>
             <p>Status zawodowy: <select id="status">
               <option value=""></option>
-              <option value="studiuję">studiuję</option>
-              <option value="pracuję">pracuję</option>
-              <option value="szukam pracy">szukam pracy</option>
+              <option value="student">studiuję</option>
+              <option value="pracuje">pracuję</option>
+              <option value="szuka_pracy">szukam pracy</option>
             </select>
             </p>
-            <p><input type="submit" value="Opracuj wróżbę" onclick="wrozba()"></p>
+            <p><input type="submit" value="Opracuj wróżbę" onclick="wyswietl_wrozbe()"></p>
         </div>
         <div id="RightColumn">
             <p> Twoja wróżba:</p>
-            <p> </p>
+            <p id="wrozba"> </p>
             <p> </p>
         </div>
         <div class="exClear"></div>
