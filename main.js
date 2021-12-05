@@ -1,16 +1,11 @@
 // Wróżba Noworoczna Main.js
-    let war_1_plec = document.getElementById('plec');
-    let war_2_stan = document.getElementById('stan');
-    let war_3_status = document.getElementById('status')
-    let zodiak = document.getElementById('zodiak')
-    let wiek = document.getElementById('wiek')
 
-   /* 
    function ktora_wrozba(){
-        let wybor
-        let par1w = war_1_plec.value;
-        let par2w = war_2_stan.value;
-        let par3w = war_3_status.value;
+
+        let par1w = document.getElementById('plec').value;
+        let par2w = document.getElementById('stan').value;
+        let par3w = document.getElementById('status').value;
+        let wybor;
         
             if (par1w == "kobieta" && par2w == "wolny" && par3w == "student") wybor = "kw1";
             else if (par1w == "kobieta" && par2w == "wolny" && par3w == "pracuje") wybor = "kw2";
@@ -37,17 +32,19 @@
             else if (par1w == "mezczyzna" && par2w == "zwiazek" && par3w == "pracuje") wybor = "mn2";
             else if (par1w == "mezczyzna" && par2w == "zwiazek" && par3w == "szuka_pracy") wybor = "mn3"; 
     
-    return ....
+    return wybor;
     }
-    */ 
+    
 
     function opracuj_wrozbe(){
+        let war_1_plec = document.getElementById('plec').value;
+        let war_2_stan = document.getElementById('stan').value;
+        let war_3_status = document.getElementById('status').value;
+        let zodiak = document.getElementById('zodiak').value;
+        let wiek = document.getElementById('wiek').value;
         let wynik;
-        let par1 = war_1_plec.value;
-        let par2 = war_2_stan.value;
-        let par3 = war_3_status.value;
-        if (par1 == "" || par2 == "" || par3 == "") wynik = "Nie podałeś istotnych parametrów";
-         //else .... wynik = ktora_wrozba();
+        if (war_1_plec == "" || war_2_stan == "" || war_3_status == "" || zodiak == "")  {wynik = "Nie podałeś wszystkich parametrów, spróbuj jeszcze raz"}
+        else {wynik = "Drogi/a  " + zodiak + " masz już " + wiek + " lat, a rok 2022 szykuje dla Ciebie masę niespodzianek. " + ktora_wrozba()};
         return wynik;
     }
 
