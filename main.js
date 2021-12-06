@@ -46,7 +46,12 @@
     return wybor, wybor2, wybor3;
     }
     
-
+    function twojWiek(){
+        let data_dzis=new Date();
+        let data_uzytkownika= document.getElementById('urodziny').value;
+        let wiek = data_dzis - data_uzytkownika;
+        wiek = Math.floor(wiek/(1000*360*60*60*24));
+    }
     function opracuj_wrozbe(){
         let war_1_plec = document.getElementById('plec').value;
         let war_2_stan = document.getElementById('stan').value;
@@ -55,7 +60,7 @@
         let wiek = document.getElementById('wiek').value;
         let wynik;
         if (war_1_plec == "" || war_2_stan == "" || war_3_status == "" || zodiak == "")  {wynik = "Nie podałeś wszystkich parametrów, spróbuj jeszcze raz"}
-        else {wynik = "Drogi/a  " + zodiak + " masz już " + wiek + " lat, a rok 2022 szykuje dla Ciebie masę niespodzianek. " + ktora_wrozba()};
+        else {wynik = "Drogi/a  " + zodiak + " masz już " + twojWiek + " lat, a rok 2022 szykuje dla Ciebie masę niespodzianek. " + ktora_wrozba()};
         return wynik;
     }
 
