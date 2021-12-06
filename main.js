@@ -59,7 +59,7 @@
         let zodiak = document.getElementById('zodiak').value;
         let wynik;
         if (war_1_plec == "" || war_2_stan == "" || war_3_status == "" || zodiak == "")  {wynik = "Nie podałeś wszystkich parametrów, spróbuj jeszcze raz"}
-        else {wynik = "Drogi/a  " + zodiak + " masz już " + twojWiek + " lat, a rok 2022 szykuje dla Ciebie masę niespodzianek. " + ktora_wrozba()};
+        else {wynik = "Drogi/a  " + zodiak + " masz już " + twojWiek() + " lat, a rok 2022 szykuje dla Ciebie masę niespodzianek. " + ktora_wrozba()};
         return wynik;
     }
 
