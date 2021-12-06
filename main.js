@@ -57,7 +57,7 @@
         let war_2_stan = document.getElementById('stan').value;
         let war_3_status = document.getElementById('status').value;
         let zodiak = document.getElementById('zodiak').value;
-        let wiek = document.getElementById('wiek').value;
+        let wiek = document.getElementById('urodziny').value;
         let wynik;
         if (war_1_plec == "" || war_2_stan == "" || war_3_status == "" || zodiak == "")  {wynik = "Nie podałeś wszystkich parametrów, spróbuj jeszcze raz"}
         else {wynik = "Drogi/a  " + zodiak + " masz już " + twojWiek + " lat, a rok 2022 szykuje dla Ciebie masę niespodzianek. " + ktora_wrozba()};
