@@ -5,9 +5,20 @@
         let par1w = document.getElementById('plec').value;
         let par2w = document.getElementById('stan').value;
         let par3w = document.getElementById('status').value;
-        let wybor;
+        let wybor, wybor2, wybor3;
         
-            if (par1w == "kobieta" && par2w == "wolny" && par3w == "student") wybor = "kw1";
+            if (par1w == "kobieta") wybor = "kw1";
+            else  (par1w == "mezczyzna") wybor = "kw2";
+           
+            if (par2w == "zajety") wybor2 = "kr1";
+            else if (par2w == "wolny") wybor2 = "kr2";
+            else if (par2w == "zwiazek") wybor2 = "kr3";
+
+            if (par3w == "student") wybor3 = "kn1";
+            else if (par3w == "pracuje") wybor3 = "kn2";
+            else if (par3w == "szuka_pracy") wybor3 = "kn3";
+      
+            /* if (par1w == "kobieta" && par2w == "wolny" && par3w == "student") wybor = "kw1";
             else if (par1w == "kobieta" && par2w == "wolny" && par3w == "pracuje") wybor = "kw2";
             else if (par1w == "kobieta" && par2w == "wolny" && par3w == "szuka_pracy") wybor = "kw3";
 
@@ -30,9 +41,9 @@
 
             else if (par1w == "mezczyzna" && par2w == "zwiazek" && par3w == "student") wybor = "mn1";
             else if (par1w == "mezczyzna" && par2w == "zwiazek" && par3w == "pracuje") wybor = "mn2";
-            else if (par1w == "mezczyzna" && par2w == "zwiazek" && par3w == "szuka_pracy") wybor = "mn3"; 
+            else if (par1w == "mezczyzna" && par2w == "zwiazek" && par3w == "szuka_pracy") wybor = "mn3"; */ 
     
-    return wybor;
+    return wybor, wybor2, wybor3;
     }
     
 
