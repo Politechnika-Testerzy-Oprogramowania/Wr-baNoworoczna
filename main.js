@@ -51,6 +51,7 @@
         let data_uzytkownika= document.getElementById('urodziny').value;
         let wiek = data_dzis - data_uzytkownika;
         wiek = Math.floor(wiek/(1000*360*60*60*24));
+        return wiek;
     }
     function opracuj_wrozbe(){
         let war_1_plec = document.getElementById('plec').value;
