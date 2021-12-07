@@ -3,8 +3,7 @@
 function plec(){
     let par1w = document.getElementById('plec').value;
     let wybor;
-    
-        if (par1w == "kobieta") wybor = "Super, jesteś kobietą.";
+        if (par1w == "kobieta") wybor = (baza_kobieta[Math.floor(Math.random()*3)]);
         else if (par1w == "mezczyzna") wybor = "Fajnie, jesteś facetem.";
     return wybor;
 }
