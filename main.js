@@ -4,23 +4,23 @@ function plec(){
     let par1w = document.getElementById('plec').value;
     let wybor;
         if (par1w == "kobieta") wybor = (baza_kobieta[Math.floor(Math.random()*3)]);
-        else if (par1w == "mezczyzna") wybor = "Fajnie, jesteś facetem.";
+        else if (par1w == "mezczyzna") wybor = (baza_mezczyzna[Math.floor(Math.random()*3)]);
     return wybor;
 }
 function stan(){
     let par2w = document.getElementById('stan').value;
     let wybor2;
-        if (par2w == "zajety") wybor2 = "Brawo, przebywasz w formalnym związku.";
-        else if (par2w == "wolny") wybor2 = "Cieszysz się życiem jako singiel.";
-        else if (par2w == "zwiazek") wybor2 = "Jesteś w wolnym związku, papierek nie ma dla ciebie znaczenia.";
+        if (par2w == "zajety") wybor2 = wybor = (baza_zajety[Math.floor(Math.random()*3)]);
+        else if (par2w == "wolny") wybor2 = (baza_wolny[Math.floor(Math.random()*3)]);
+        else if (par2w == "zwiazek") wybor2 = (baza_zwiazek[Math.floor(Math.random()*3)]);
     return wybor2;
 }
 function status(){
     let par3w = document.getElementById('status').value;
     let wybor3;
-        if (par3w == "student") wybor3 = "Studenckie życie to jest to.";
-        else if (par3w == "pracuje") wybor3 = "Pracujesz - prowadzisz stabilne życie.";
-        else if (par3w == "szuka_pracy") wybor3 = "Spełniasz marzenia szukając nowych szans.";
+        if (par3w == "student") wybor3 = (baza_student[Math.floor(Math.random()*3)]);
+        else if (par3w == "pracuje") wybor3 = (baza_pracuje[Math.floor(Math.random()*3)]);
+        else if (par3w == "szuka_pracy") wybor3 = wybor3 = (baza_szuka_pracy[Math.floor(Math.random()*3)]);
     return wybor3;
 }
 
