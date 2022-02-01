@@ -3,8 +3,8 @@
 function plec(){
     let par1w = document.getElementById('plec').value;
     let wybor;
-        if (par1w == "kobieta") wybor = (baza_kobieta[Math.floor(Math.random()*3)]);
-        else if (par1w == "mezczyzna") wybor = (baza_mezczyzna[Math.floor(Math.random()*3)]);
+        if (par1w == "kobieta") wybor = (baza_kobieta[Math.floor(Math.random()*4)]);
+        else if (par1w == "mezczyzna") wybor = (baza_mezczyzna[Math.floor(Math.random()*4)]);
     return wybor;
 }
 function stan(){
